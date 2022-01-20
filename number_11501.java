@@ -27,6 +27,7 @@ public class number_11501 {
             }
             sb.append(profit).append("\n");
         }
+        
         System.out.print(sb);
         sc.close();
     }

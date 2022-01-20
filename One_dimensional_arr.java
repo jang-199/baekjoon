@@ -20,7 +20,6 @@ public class One_dimensional_arr {
 		}
 	}
  
- 
 	// 에라토스테네스의 체 알고리즘
 	public static void get_prime() {
 		

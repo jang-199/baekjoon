@@ -14,4 +14,5 @@ public class for_1 {
         System.out.println(count);
         sc.close();
     }
+    
 }

@@ -14,8 +14,6 @@ public class number_10808 {
         }
         for(int k : arr){
             System.out.print(k + " ");
-        }
-        
-        
+        } 
     }
 }

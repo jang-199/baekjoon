@@ -25,6 +25,7 @@ public class number_1517 {
         System.out.print(new merge_sort_for_bobble(arr).cnt);
 
     }
+    
 }
 
 class merge_sort_for_bobble{

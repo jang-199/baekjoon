@@ -16,7 +16,6 @@ public class shell {
         for(int k : arr){
             sBuilder.append(String.valueOf(k)+"\n");
         }
-
         System.out.print(sBuilder);
     }
 }

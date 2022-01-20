@@ -44,6 +44,7 @@ class selection_Sort{
                 if(list[min_idx]>list[j]){
                     min_idx = j;
                 }
+                
             }new swap(list,i,min_idx);
         }
     }

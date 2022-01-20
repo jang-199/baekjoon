@@ -12,4 +12,5 @@ public class jnumber_10870 {
         if(n==0) return 0;
         return fibo(n-1)+fibo(n-2);
     }
+    
 }

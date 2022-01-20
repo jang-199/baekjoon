@@ -34,8 +34,6 @@ public class number_12865 {
             v[i] = sc.nextInt();
         }sc.close();
         System.out.print(kn(0,0));
-
-
     }
 
     public static int kn(int i,int w){

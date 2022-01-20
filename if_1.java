@@ -19,4 +19,5 @@ public class if_1 {
         }
         System.out.println(hour+" "+ minute);
     }
+    
 }

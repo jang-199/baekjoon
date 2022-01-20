@@ -22,4 +22,5 @@ public class number_2609 {
             return GCD(B,A%B);
         }
     }
+    
 }

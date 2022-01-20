@@ -32,4 +32,5 @@ public class number_6603 {
             }System.out.println();
         }        
     }
+    
 }

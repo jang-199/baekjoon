@@ -19,12 +19,7 @@ public class radix {
         for(int k : arr){
             System.out.println(k);
         }
-    }
-
-    
-    
-    
-    
+    }    
 }
 
 class radix_sort{

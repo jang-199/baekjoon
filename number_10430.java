@@ -12,5 +12,4 @@ public class number_10430 {
         System.out.println((A*B)%C);
         System.out.println( ((A%C) * (B%C))%C);
     }
-    
 }

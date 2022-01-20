@@ -28,6 +28,7 @@ class quick_Sort{
         sort(arr, 0, arr.length-1);
     }
 
+    
     void sort(int arr[], int start, int end){
         int sec = partition(arr,start,end);     //두개의 파티션으로 나누고 두번째 파티션의 첫번째 인덱스를 저장
         if(start<sec-1){    //왼쪽 파티션의 인자는 1개 => 정렬할 필요 없음. 따라서 오른쪽 파티션이 시작점에서 1개 이상 차이날때만 함수를 재귀호출

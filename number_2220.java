@@ -32,4 +32,5 @@ public class number_2220 {
             System.out.print(arr.get(i)+" ");
         }
     }
+    
 }

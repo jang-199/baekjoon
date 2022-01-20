@@ -39,4 +39,5 @@ public class number_1915 {
         }
         System.out.println((int)Math.pow(max, 2));    
     }
+    
 }

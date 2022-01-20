@@ -29,4 +29,5 @@ public class number_1946 {
         System.out.print(sb);
         sc.close();
     }
+    
 }

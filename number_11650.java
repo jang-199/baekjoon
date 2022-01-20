@@ -14,8 +14,7 @@ public class number_11650 {
             for(int j=0;j<2;j++){
                 System.out.print(arr[i][j]+" ");
             }System.out.println();
-        }
-        
+        }  
     }
 }
 

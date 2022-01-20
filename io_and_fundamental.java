@@ -11,6 +11,7 @@ public class io_and_fundamental{
 		System.out.println(A * (Character.getNumericValue(B.charAt(0))));
 		System.out.println(A * Integer.parseInt(B));
     }
+    
 }
 
 

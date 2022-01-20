@@ -46,4 +46,5 @@ public class number_1727 {
         
         System.out.println(difference[man][woman]);
     }
+    
 }

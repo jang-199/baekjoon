@@ -19,6 +19,7 @@ public class number_11729 {
         bw.flush();
 		bw.close();
     }   
+    
     static void hanoi(int n,int from,int dummy, int to) throws IOException{
         if(n==1){
             bw.write(from+" "+to+"\n");

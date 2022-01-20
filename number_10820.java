@@ -15,7 +15,5 @@ public class number_10820 {
             }System.out.println(lower+" "+upper+" "+num+" "+empty);
             upper=0; lower=0; num=0; empty=0;
         }sc.close(); 
-        
-
     }
 }
