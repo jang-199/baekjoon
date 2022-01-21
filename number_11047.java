@@ -10,16 +10,18 @@ public class number_11047 {
         for(int i=coin-1;i>=0;i--){
             coin_arr[i] = sc.nextInt();     // 액수가 큰 것부터
         }
+
         int idx=0;
         int count=0;
+        
         while(total!=0){
             while(coin_arr[idx]<=total){
                 total-=coin_arr[idx];
                 count++;
             }
             idx++;
-            
         }
         System.out.println(count);
+        sc.close();
     }
 }
