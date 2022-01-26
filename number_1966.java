@@ -45,6 +45,7 @@ public class number_1966 {
             }
             System.out.println(count);
             Q.clear();
+            sc.close();
         }
     }
 }
