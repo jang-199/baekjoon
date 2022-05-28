@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //grid world => 4 by 4
-//|‾0‾|‾‾‾|‾‾‾|‾‾‾|
+//|‾‾‾|‾‾‾|‾‾‾|‾‾‾|
 //|‾‾‾|‾‾‾|‾‾‾|‾‾‾|
 //|‾‾‾|‾‾‾|‾‾‾|‾‾‾|
 //|‾‾‾|‾‾‾|‾‾‾|‾0‾|
@@ -38,7 +38,7 @@ class assignmnet_algolithm {
 
                 for (int row = 0; row < 4; row++) { // 행 증가
                     for (int col = 0; col < 4; col++) { // 열 증가
-                        if ((row == 0 && col == 0) || (row == 3 && col == 3)) {
+                        if ((row == 3 && col == 3)) {
                             grid_world[row][col] = 0;
                             continue;
                         }
@@ -73,7 +73,47 @@ class assignmnet_algolithm {
 
             } // 반복 횟수만큼 반복 끝
 
-            StringBuilder sb = new StringBuilder();     //이하 결과 출력 부분
+            StringBuilder sb = new StringBuilder();     
+            sb.append("Iterative value update").append("\n");
+            for (int row = 0; row < 4; row++) {
+                for (int col = 0; col < 4; col++) {
+                    sb.append(grid_world[row][col]).append("    ");
+                }
+                sb.append("\n");
+            }
+
+            for(int i=0;i<4;i++){ //각 그리드의 값을 양수로 변경
+                for(int j=0;j<4;j++){
+                    grid_world[i][j] = Math.abs(grid_world[i][j]);
+                }
+            }
+
+            sb.append('\n').append("Modify each from negative to positive\n");
+            for (int row = 0; row < 4; row++) {
+                for (int col = 0; col < 4; col++) {
+                    sb.append(grid_world[row][col]).append("    ");
+                }
+                sb.append("\n");
+            }
+
+            for(int i=1;i<4;i++){
+                grid_world[0][i] = grid_world[0][i-1] + grid_world[0][i];
+                grid_world[i][0] = grid_world[i-1][0] + grid_world[i][0];
+            }
+    
+    
+            for(int i=1;i<4;i++){
+                for(int j=1;j<4;j++){
+                    if((grid_world[i-1][j]+grid_world[i][j]) > (grid_world[i][j-1]+grid_world[i][j])){//아래->오른쪽이 더 빠를 때
+                        grid_world[i][j] = grid_world[i][j-1]+grid_world[i][j];
+                    }else{
+                        grid_world[i][j] = grid_world[i-1][j]+grid_world[i][j];
+                    }
+                }
+            }
+
+            //StringBuilder sb = new StringBuilder();     //이하 결과 출력 부분
+            sb.append('\n').append("Minimum cost for each grid from the start point\n");
             for (int row = 0; row < 4; row++) {
                 for (int col = 0; col < 4; col++) {
                     sb.append(grid_world[row][col]).append("    ");
