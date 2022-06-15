@@ -6,7 +6,7 @@ import java.util.Scanner;
 //|‾‾‾|‾‾‾|‾‾‾|‾‾‾|
 //|‾‾‾|‾‾‾|‾‾‾|‾0‾|
 // ‾‾‾ ‾‾‾ ‾‾‾ ‾‾‾
-class assignmnet_algolithm {
+class assignmnet_algorithm {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double grid_world[][] = new double[4][4];
